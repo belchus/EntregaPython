@@ -11,7 +11,7 @@ class Cliente:
 #Creo metodo para agregar un producto al carrito del cliente
     def agregoAlCarrito(self,producto):
       self.carrito.append(producto)
-      print(f"se agregó al carrito {self.carrito}")
+      print (f"se agregó al carrito {self.carrito} el producto{self.nombre}")
 
 #Creo metodo que devuelva la cantidad de productos que compro el cliente
     def __str__(self):
@@ -33,5 +33,5 @@ class Producto:
     def __str__(self):
         return str(f"Producto: {self.nombre}, precio: {self.precio}")
 
-    def __repr__(self):
-        return self.id
+    def _repr_(self):
+        return str(self.id) #convertimos a str el id

@@ -1,6 +1,8 @@
+#Creo una base de datos con una ruta nueva ya que antes usaba colab
 BD={'camila':'clave12'}
 ruta= 'bd.txt'
 
+#Funcion para escribir los datos en la base
 def escribir(datos):
  with open (ruta , 'w') as f:
    f.write(str(datos))
